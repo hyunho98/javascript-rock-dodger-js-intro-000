@@ -159,10 +159,10 @@ function moveDodgerLeft() {
 
    function stepLeft(){
      if (dodgerLeft > 0){
-       DODGER.style.left = `${dodgerLeft -= 2}px`
+       DODGER.style.left = `${dodgerLeft -= 4}px`
      }
 
-     left += 2;
+     left += 4;
 
    if (left < 4) {
      window.requestAnimationFrame(stepLeft);
@@ -183,10 +183,10 @@ function moveDodgerRight() {
 
    function stepRight() {
      if (dodgerRight < (GAME_WIDTH - 40)) {
-       DODGER.style.left = `${dodgerRight += 2}px`;
+       DODGER.style.left = `${dodgerRight += 4}px`;
      }
 
-     right += 2;
+     right += 4;
 
      if (right < 4){
        window.requestAnimationFrame(stepRight);
